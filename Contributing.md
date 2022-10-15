@@ -8,20 +8,7 @@ Steps to follow
 
 git clone https://github.com/[YOUR_GITHUB_USERNAME]/[REPO_NAME].git
 
-## 3. Installing all npm packages
-
-Navigate to the directory and run the following code. This will install all the dependencies you need.
-The project has been created using yarn package manager
-
-
-npm install 
-OR
-yarn install
-
-
-*Note* : You can have different localhost other than 3000, use that in that case. 
-
-*Never push credentials to GitHub*
+## 3. Run index.html using VScode live server
 
 ## Pushing changes or making changes
 
@@ -35,6 +22,7 @@ git commit -m "comments"
 git push -u origin "branch name"
 
 ## Create a PR
+
 Click on contribute and perfrom a Pull Request
 And also describe a bit what changes made and try to attach screenshots.
 
