@@ -3,6 +3,9 @@
     box-sizing: border-box;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #111;
@@ -30,9 +33,14 @@ body{
 .row_posterLarge{
     max-height: 250px;
 }
-.row{
+.row h2{
     color: white;
-    margin-right:20px;
+    margin-left:25px;
+    margin-top: 20px;
+}
+.row{
+  color: white;
+  margin-left:-5px;
 }
 .banner{
     background-image: url('img/banner.jpg');
@@ -49,6 +57,18 @@ body{
     height: 190px;
 
 
+}
+
+.banner_button{
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#list{
+  margin-left: 10px;
+  margin-bottom: 220px;
 }
 .banner_title{
     font-size: 3rem;
@@ -67,3 +87,48 @@ body{
     
 
 }
+#icon{
+    padding-left: 25px;
+    padding-top: 2px;
+    height: 45px;
+    width: 119px;
+    margin-bottom: 125px;
+  }
+
+.navbar{
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+  }
+  .navbar ul{
+    overflow: auto;
+    padding-left: 160px;
+  }
+  .navbar li{
+    float: left;
+    list-style: none;
+    margin: 15px 15px;
+   
+  }
+  .navbar li a{
+    padding: 2px 2px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .navbar li a :hover{
+    color: gray;
+  }
+  .search
+  {
+    padding: 15px;
+    padding-left: 1000px;
+    padding-top: 15px;
+    width: 150px;
+  }
+  .navbar input{
+    width: 200px;
+    outline: none;
+    height: 25px;
+  }
+  
