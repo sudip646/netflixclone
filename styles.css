@@ -128,11 +128,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.bar {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 .navbar ul {
   display: flex;
   align-items: center;
