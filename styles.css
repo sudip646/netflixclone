@@ -104,13 +104,18 @@ body {
   height: 100px;
 }
 #icon {
+  position: absolute;
   padding-inline: 1rem;
   height: 45px;
   width: 119px;
 }
 .icondiv {
+  position: relative;
   height: 45px;
   width: 119px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar {
   background-color: #111;
@@ -122,6 +127,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+.bar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .navbar ul {
   display: flex;
