@@ -1,229 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix Clone</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/netflixlog.png">
-</head>
-<body>
-
-     <!-- Nav bar -->
-     <header>
-        <nav class="navbar">
-            <img  class="navbar" id="icon" src="./img/netflixlogo-removebg-preview.png" alt="Netflix" > 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tv Shows</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">New & Popular</a></li>
-                <li><a href="#">My List</a></li>
-                <li><a href="#">Language</a></li>
-                <div class="search">
-                    <input type="text" name="search" id="search" placeholder="Search">
-                </div>
-            </ul>
-        </nav>
-     </header>
-
-    <!-- header -->
-    <div class="banner">
-        <div class="banner_contents">
-            <h1 class="banner_title">Money Heist</h1>
-        <div class="banner_button">
-            <button class="banner_button" id="play" > 
-                <i class="fa-solid fa-play"></i>
-                    Play
-            </button>
-            <button class="banner_button " id="list">
-                <i class="fa-solid fa-info"></i>
-                    More Info
-            </button>
-            </div>
-            <div class="banner_description">
-                To carry out the biggest heist in history. a mysterious man called professor recuits a band of eight robbers.....
-            </div>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/netflixlog.png"
+    />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <header>
+      <nav class="navbar">
+        <div class="icondiv">
+          <img
+            class="navbar"
+            id="icon"
+            src="./img/netflixlogo-removebg-preview.png"
+            alt="Netflix"
+          />
         </div>
-    </div>
-    
-    <!-- NETFLIX ORIGINAL -->
-    
-    <div class="row">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tv Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">New & Popular</a></li>
+          <li><a href="#">My List</a></li>
+          <li><a href="#">Language</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" name="search" id="search" placeholder="Search" />
+        </div>
+      </nav>
+    </header>
+
+    <div class="scrollable">
+      <!-- header -->
+      <div class="banner">
+        <div class="banner_contents">
+          <h1 class="banner_title">Money Heist</h1>
+          <div class="banner_btn">
+            <button class="banner_button" id="play">
+              <i class="fa-solid fa-play"></i>
+              Play
+            </button>
+            <button class="banner_button" id="list">
+              <i class="fa-solid fa-info"></i>
+              More Info
+            </button>
+          </div>
+          <p class="banner_description">
+            To carry out the biggest heist in history. a mysterious man called
+            professor recuits a band of eight robbers.....
+          </p>
+        </div>
+      </div>
+
+      <!-- NETFLIX ORIGINAL -->
+
+      <div class="row">
         <h2>NETFLIX ORIGINALS</h2>
         <div class="row_posters">
-            <img src="img/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie8.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="img/large-movie8.jpg" alt="" class="row_poster row_posterLarge">
+          <img
+            src="img/large-movie1.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie2.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie3.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie4.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie5.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie6.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie7.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie8.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie1.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie2.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie3.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie4.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie5.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie6.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie7.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
+          <img
+            src="img/large-movie8.jpg"
+            alt=""
+            class="row_poster row_posterLarge"
+          />
         </div>
-    </div>
+      </div>
 
-    <!-- TRENDING NOW -->
-    <div class="row">
+      <!-- TRENDING NOW -->
+      <div class="row">
         <h2>Trending Now</h2>
         <div class="row_posters">
-            <img src="https://occ-0-32-325.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTu-TO96ZBQLew5yss50EX5BJVJfQJcTbAiFdMTaUHX41GVnL_QbWspvex5T5D9tQ7HvZn320BJ8qRkLAXDRCAE1eC7k0nTYb-uOMLUBhXV_OYwCJycfPJ8g8-KWtpKrPTQtzLGE1xtvtCcyLdjbg0WGHk4YuJYycP9us1uH1WPlcJyghz1XxgD0Jb5P2d0GY1Y_aekxX6SaUPtNtbd9avvGcqq_agNwN6FdSe47OVPZ_0lHCaQCISib0-uc6hwOpYLK5tmy9fH1dpR5QAjDa1A0R8e39nY6N-qDU1UoApay1Lv63QDe0r7q8i5fNshVGeeVhE4BtM1SsXTCt4BRhTbqnhEvBymD9N0hEi3FM45FBdVFG7MB710IJiGHCa7ilzZDNQ6aSn_CL_mfEpyV0AqB3qL14jNa6xZs17zinIuuOg.jpg?r=7cd" alt="" class="row_poster">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdVCPZ7_LWcx0e_hGUOyqjH0t45lE6YGrCBvcxcsT054VGDJC0HgqXIHgM_k7KB2tSVAY&usqp=CAU" alt="" class="row_poster">
-            <img src="https://occ-0-32-586.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcrFZz9EF21zq5jpUHiocLppLkvV2xwNa5qlutUQ2KUBgRxvgl6WuM_SHLADkIgPOtRxQR73ZNmBMDW1tUpYRp4XiTUsOJmRuKDC.jpg?r=b92" alt="" class="row_poster">
-            <img src="https://www.ladbible.com/cdn-cgi/image/width=720,quality=70,format=jpeg,fit=pad,dpr=1/https%3A%2F%2Fs3-images.ladbible.com%2Fs3%2Fcontent%2Fb74f79975e06a0abcf45cd65ffffd950.png" alt="" class="row_poster">
-            <img src="https://pdqwire.com/wp-content/uploads/2020/08/35285.jpg" alt="" class="row_poster">
-            <img src="https://maroonersrock.com/wp-content/uploads/2020/01/1572918339_320934_1573142734_noticia_normal.jpg" alt="" class="row_poster">
-            <img src="https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW83B5wqCAdXdcFrSic1dHYXR1-wPbPaV4pbqS72G6xkZwtOnkENr8eggCcNpVr36_7RvRC-KCD9uCNQHO-zC18Eb60q.jpg?r=6c4" alt="" class="row_poster">
-            <img src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUK4bkBAzVZnjrtcIZlZd04ATJChRgdQm6P6JrFO5I8Yvuxp8VCvoF-T8BxuGJgU4giyKQLANaCh5K24BMDAcOcb3FZPix29nary.jpg?r=739" alt="" class="row_poster">
-            <img src="https://assets.whatsnewonnetflix.com/external_assets/sggkh+%5B%5Blxx*9*251*8998_8_muochl_mvg%5Bwmn%5Bzkr%5Be4%5Bivmwrgrlm%5B587v5880uy787v6xz0u8zww441v7v2uvw57u1uy5%5BZZZZYEc1SVg5SC4%5D47vvdKqZ7sPG60O*TLKsojMtUrvV7RoZGzZEeWmMUr5poM%5DW6vqRzwCv*VV6bVjZHG6ZFoV4eZOJtUev1VmcKEs7lcX0GkFcltPpLZbSX6LxNQ7NSz*sY7oDw%5DYyyd.jpg" alt="" class="row_poster">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMrb1jqKEXA0x9q1_xzSVwBjopyJc9caSrlcefPabuoba6Urvif0pWAto9GrkeFiRm7E&usqp=CAU" alt="" class="row_poster">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEOjmLVL5Lmfa-O3XjCi64MWmfq0mP-qRCuQ&usqp=CAU" alt="" class="row_poster">
-
-            
+          <img
+            src="https://occ-0-32-325.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTu-TO96ZBQLew5yss50EX5BJVJfQJcTbAiFdMTaUHX41GVnL_QbWspvex5T5D9tQ7HvZn320BJ8qRkLAXDRCAE1eC7k0nTYb-uOMLUBhXV_OYwCJycfPJ8g8-KWtpKrPTQtzLGE1xtvtCcyLdjbg0WGHk4YuJYycP9us1uH1WPlcJyghz1XxgD0Jb5P2d0GY1Y_aekxX6SaUPtNtbd9avvGcqq_agNwN6FdSe47OVPZ_0lHCaQCISib0-uc6hwOpYLK5tmy9fH1dpR5QAjDa1A0R8e39nY6N-qDU1UoApay1Lv63QDe0r7q8i5fNshVGeeVhE4BtM1SsXTCt4BRhTbqnhEvBymD9N0hEi3FM45FBdVFG7MB710IJiGHCa7ilzZDNQ6aSn_CL_mfEpyV0AqB3qL14jNa6xZs17zinIuuOg.jpg?r=7cd"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdVCPZ7_LWcx0e_hGUOyqjH0t45lE6YGrCBvcxcsT054VGDJC0HgqXIHgM_k7KB2tSVAY&usqp=CAU"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://occ-0-32-586.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcrFZz9EF21zq5jpUHiocLppLkvV2xwNa5qlutUQ2KUBgRxvgl6WuM_SHLADkIgPOtRxQR73ZNmBMDW1tUpYRp4XiTUsOJmRuKDC.jpg?r=b92"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://www.ladbible.com/cdn-cgi/image/width=720,quality=70,format=jpeg,fit=pad,dpr=1/https%3A%2F%2Fs3-images.ladbible.com%2Fs3%2Fcontent%2Fb74f79975e06a0abcf45cd65ffffd950.png"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://pdqwire.com/wp-content/uploads/2020/08/35285.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://maroonersrock.com/wp-content/uploads/2020/01/1572918339_320934_1573142734_noticia_normal.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW83B5wqCAdXdcFrSic1dHYXR1-wPbPaV4pbqS72G6xkZwtOnkENr8eggCcNpVr36_7RvRC-KCD9uCNQHO-zC18Eb60q.jpg?r=6c4"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUK4bkBAzVZnjrtcIZlZd04ATJChRgdQm6P6JrFO5I8Yvuxp8VCvoF-T8BxuGJgU4giyKQLANaCh5K24BMDAcOcb3FZPix29nary.jpg?r=739"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://assets.whatsnewonnetflix.com/external_assets/sggkh+%5B%5Blxx*9*251*8998_8_muochl_mvg%5Bwmn%5Bzkr%5Be4%5Bivmwrgrlm%5B587v5880uy787v6xz0u8zww441v7v2uvw57u1uy5%5BZZZZYEc1SVg5SC4%5D47vvdKqZ7sPG60O*TLKsojMtUrvV7RoZGzZEeWmMUr5poM%5DW6vqRzwCv*VV6bVjZHG6ZFoV4eZOJtUev1VmcKEs7lcX0GkFcltPpLZbSX6LxNQ7NSz*sY7oDw%5DYyyd.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMrb1jqKEXA0x9q1_xzSVwBjopyJc9caSrlcefPabuoba6Urvif0pWAto9GrkeFiRm7E&usqp=CAU"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEOjmLVL5Lmfa-O3XjCi64MWmfq0mP-qRCuQ&usqp=CAU"
+            alt=""
+            class="row_poster"
+          />
         </div>
-    </div>
+      </div>
 
-    <!-- TOP RATED -->
+      <!-- TOP RATED -->
 
-    <div class="row">
+      <div class="row">
         <h2>TOP RATED</h2>
         <div class="row_posters">
-            <img src="https://occ-0-2219-37.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABemAviaz5ZmjYUOl1OZRg-dkY2LOHxgBxmn9lCJwRrwfSfATTc0l3HzfJNMo9GDd4nGfIPXNU_-B2CgxLajJqQXq7MgckMJ-hU9ysGGY3X0eh4tEpPtYKTZVSnqHpTAEPg5MqERINwg.jpg?r=c01" alt="" class="row_poster">
-            <img src="https://assets.whatsnewonnetflix.com/external_assets/sggkh+%5B%5Blxx*9*8411*35_8_muochl_mvg%5Bwmn%5Bzkr%5Be3%5BC805vQhtDYWV7zJyzMwnXCTFK*B%5BZZZZYAA6EnQP9JgrCkAXnRp8TksOwenHeyJGSypKZxasgQbS5GJAzwZtaa67rnIOtsOVnxEBXAuKXtIQyoOMLKBhZwSyYBj5Z6SRPmM3ZfCYXn3AjEOvVvHehZA87g6CZrO8vfeOn%5D0BQ4qRIIaQxlPRvxJzXeMAVBKVhgt.jpg" alt="" class="row_poster">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_qxzvYCwguyw7jlWf-Xu24nhHC7_nDMzww&usqp=CAU" alt="" class="row_poster">
-            <img src="https://www.justwatch.com/images/backdrop/251477468/s640/season-4" alt="" class="row_poster">
-            <img src="https://www.allkpop.com/upload/2022/01/content/291525/1643487921-1.jpg" alt="" class="row_poster">
-            <img src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaqh0JUCkjHR__hdAWyjdtgGrFLkaxMt3gJqTDoHfCeQb6jASLKWPqK1LnNN5OeGIGoCbINLwGhZ3AsYYkULScmO-n5FGv4y_vCy.jpg?r=f45" alt="" class="row_poster">
-            <img src="https://i.ytimg.com/vi/RN9G-g5PhJE/mqdefault.jpg" alt="" class="row_poster">
-            <img src="https://img.hulu.com/user/v3/artwork/5a6451df-9c9d-4e58-8df2-910568d9bda8?base_image_bucket_name=image_manager&base_image=47fda8fe-4b1a-4567-b541-3633f7b69fee&size=600x338&format=jpeg" alt="" class="row_poster">
-            <img src="https://i.ytimg.com/vi/7Yhhdm-3wU4/maxresdefault.jpg" alt="" class="row_poster">
-            <img src="https://flxt.tmsimg.com/assets/p13935058_b1t_h8_aa.jpg" alt="" class="row_poster">
-            <img src="https://occ-0-58-987.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABT1ns0k9-c3ISRm1WdTggXLf3Ir0DXw20khSzw6pxT-GYLdXk0KAy_LWbzi68m45xdfhq1qVP8YiS6ejG_290StN64FVd-XCnftJ.jpg?r=5c4" alt="" class="row_poster">
-
+          <img
+            src="https://occ-0-2219-37.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABemAviaz5ZmjYUOl1OZRg-dkY2LOHxgBxmn9lCJwRrwfSfATTc0l3HzfJNMo9GDd4nGfIPXNU_-B2CgxLajJqQXq7MgckMJ-hU9ysGGY3X0eh4tEpPtYKTZVSnqHpTAEPg5MqERINwg.jpg?r=c01"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://assets.whatsnewonnetflix.com/external_assets/sggkh+%5B%5Blxx*9*8411*35_8_muochl_mvg%5Bwmn%5Bzkr%5Be3%5BC805vQhtDYWV7zJyzMwnXCTFK*B%5BZZZZYAA6EnQP9JgrCkAXnRp8TksOwenHeyJGSypKZxasgQbS5GJAzwZtaa67rnIOtsOVnxEBXAuKXtIQyoOMLKBhZwSyYBj5Z6SRPmM3ZfCYXn3AjEOvVvHehZA87g6CZrO8vfeOn%5D0BQ4qRIIaQxlPRvxJzXeMAVBKVhgt.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_qxzvYCwguyw7jlWf-Xu24nhHC7_nDMzww&usqp=CAU"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://www.justwatch.com/images/backdrop/251477468/s640/season-4"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://www.allkpop.com/upload/2022/01/content/291525/1643487921-1.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaqh0JUCkjHR__hdAWyjdtgGrFLkaxMt3gJqTDoHfCeQb6jASLKWPqK1LnNN5OeGIGoCbINLwGhZ3AsYYkULScmO-n5FGv4y_vCy.jpg?r=f45"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://i.ytimg.com/vi/RN9G-g5PhJE/mqdefault.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://img.hulu.com/user/v3/artwork/5a6451df-9c9d-4e58-8df2-910568d9bda8?base_image_bucket_name=image_manager&base_image=47fda8fe-4b1a-4567-b541-3633f7b69fee&size=600x338&format=jpeg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://i.ytimg.com/vi/7Yhhdm-3wU4/maxresdefault.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://flxt.tmsimg.com/assets/p13935058_b1t_h8_aa.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://occ-0-58-987.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABT1ns0k9-c3ISRm1WdTggXLf3Ir0DXw20khSzw6pxT-GYLdXk0KAy_LWbzi68m45xdfhq1qVP8YiS6ejG_290StN64FVd-XCnftJ.jpg?r=5c4"
+            alt=""
+            class="row_poster"
+          />
         </div>
-    </div>
+      </div>
 
-    <!-- ACTION MOVIES -->
-    <div class="row">
+      <!-- ACTION MOVIES -->
+      <div class="row">
         <h2>ACTION MOVIES</h2>
         <div class="row_posters">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT434ybPHk5ad1ZLf4UJq7on2UxOkAhvfHfdFfmkAqEeJHrXfqwXJViPkwQIBQAEkLDCE&usqp=CAU" alt="" class="row_poster">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-m72CKocHfJEJMlQqT3dZSppd1h4pTwwoc0jR2YA1KHORqAsfAv-tVYQPsu-ZgJdj6TY&usqp=CAU" alt="" class="row_poster">
-            <img src="https://i.ytimg.com/vi/5oFOGQJ_91c/maxresdefault.jpg" alt="" class="row_poster">
-            <img src="https://i.cdn.newsbytesapp.com/images/l239_30531625716009.jpg" alt="" class="row_poster">
-            <img src="https://www.denofgeek.com/wp-content/uploads/2013/04/oblivion-main_1.jpg?fit=640%2C380" alt="" class="row_poster">
-            <img src="https://www.liveabout.com/thmb/S9279kO0IX4Qf6Ak0sW1djdgINI=/1000x667/filters:fill(auto,1)/Final-Destination-5-Hot-Movie-Classic-Silk-Poster-Art-Bedroom-Decoration-2034-5c508b1a46e0fb0001dde19d.jpg" alt="" class="row_poster">
-            <img src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUE4FICWTMPb05uZ8rQX9o2IFRSTTFk2QIqJjNCkTSPoqr6iymcJMacYi3JD001ooKv2486w1vduTjYO4RH0oFMczIXAqjbw33xN.jpg?r=ed2" alt="" class="row_poster">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdd_948K0HPhSCUuDZulXBmceYdx81xAV49Q&usqp=CAU" alt="" class="row_poster">
-            <img src="https://www.vpnhelpers.com/wp-content/uploads/2021/07/Catch-Me-If-You-Can.jpg" alt="" class="row_poster">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQD0h64SlQqjB7oFPD21A7ZyQta9OHJAP3cA&usqp=CAU" alt="" class="row_poster">
-            <img src="https://i.ytimg.com/vi/Wou_hXrmHfQ/maxresdefault.jpg" alt="" class="row_poster">
-            <img src="https://pbs.twimg.com/media/Ew_HOBwWgAMOQ4B.jpg:large" alt="" class="row_poster">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT434ybPHk5ad1ZLf4UJq7on2UxOkAhvfHfdFfmkAqEeJHrXfqwXJViPkwQIBQAEkLDCE&usqp=CAU"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-m72CKocHfJEJMlQqT3dZSppd1h4pTwwoc0jR2YA1KHORqAsfAv-tVYQPsu-ZgJdj6TY&usqp=CAU"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://i.ytimg.com/vi/5oFOGQJ_91c/maxresdefault.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://i.cdn.newsbytesapp.com/images/l239_30531625716009.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://www.denofgeek.com/wp-content/uploads/2013/04/oblivion-main_1.jpg?fit=640%2C380"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://www.liveabout.com/thmb/S9279kO0IX4Qf6Ak0sW1djdgINI=/1000x667/filters:fill(auto,1)/Final-Destination-5-Hot-Movie-Classic-Silk-Poster-Art-Bedroom-Decoration-2034-5c508b1a46e0fb0001dde19d.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUE4FICWTMPb05uZ8rQX9o2IFRSTTFk2QIqJjNCkTSPoqr6iymcJMacYi3JD001ooKv2486w1vduTjYO4RH0oFMczIXAqjbw33xN.jpg?r=ed2"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdd_948K0HPhSCUuDZulXBmceYdx81xAV49Q&usqp=CAU"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://www.vpnhelpers.com/wp-content/uploads/2021/07/Catch-Me-If-You-Can.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQD0h64SlQqjB7oFPD21A7ZyQta9OHJAP3cA&usqp=CAU"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://i.ytimg.com/vi/Wou_hXrmHfQ/maxresdefault.jpg"
+            alt=""
+            class="row_poster"
+          />
+          <img
+            src="https://pbs.twimg.com/media/Ew_HOBwWgAMOQ4B.jpg:large"
+            alt=""
+            class="row_poster"
+          />
         </div>
-    </div>
+      </div>
 
       <!-- COMEDY MOVIES -->
       <div class="row">
         <h2>COMEDY MOVIES</h2>
         <div class="row_posters">
-            <img src="" alt="" class="row_poster">
-            <img src="img/small-movie2.jpg" alt="" class="row_poster">
-            <img src="img/small-movie3.jpg" alt="" class="row_poster">
-            <img src="img/small-movie4.jpg" alt="" class="row_poster">
-            <img src="img/small-movie5.jpg" alt="" class="row_poster">
-            <img src="img/small-movie6.jpg" alt="" class="row_poster">
-            <img src="img/small-movie7.jpg" alt="" class="row_poster">
-            <img src="img/small-movie8.jpg" alt="" class="row_poster">
-            <img src="img/small-movie1.jpg" alt="" class="row_poster">
-            <img src="img/small-movie2.jpg" alt="" class="row_poster">
-            <img src="img/small-movie3.jpg" alt="" class="row_poster">
-            <img src="img/small-movie4.jpg" alt="" class="row_poster">
+          <img src="" alt="" class="row_poster" />
+          <img src="img/small-movie2.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie3.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie4.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie5.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie6.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie7.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie8.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie1.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie2.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie3.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie4.jpg" alt="" class="row_poster" />
         </div>
-    </div>
+      </div>
 
-       <!-- HORROR MOVIES -->
-       <div class="row">
+      <!-- HORROR MOVIES -->
+      <div class="row">
         <h2>HORROR MOVIES</h2>
         <div class="row_posters">
-            <img src="img/small-movie1.jpg" alt="" class="row_poster">
-            <img src="img/small-movie2.jpg" alt="" class="row_poster">
-            <img src="img/small-movie3.jpg" alt="" class="row_poster">
-            <img src="img/small-movie4.jpg" alt="" class="row_poster">
-            <img src="img/small-movie5.jpg" alt="" class="row_poster">
-            <img src="img/small-movie6.jpg" alt="" class="row_poster">
-            <img src="img/small-movie7.jpg" alt="" class="row_poster">
-            <img src="img/small-movie8.jpg" alt="" class="row_poster">
-            <img src="img/small-movie1.jpg" alt="" class="row_poster">
-            <img src="img/small-movie2.jpg" alt="" class="row_poster">
-            <img src="img/small-movie3.jpg" alt="" class="row_poster">
-            <img src="img/small-movie4.jpg" alt="" class="row_poster">
-            <img src="img/small-movie5.jpg" alt="" class="row_poster">
-            <img src="img/small-movie6.jpg" alt="" class="row_poster">
-            <img src="img/small-movie7.jpg" alt="" class="row_poster">
-            <img src="img/small-movie8.jpg" alt="" class="row_poster">
+          <img src="img/small-movie1.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie2.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie3.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie4.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie5.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie6.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie7.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie8.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie1.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie2.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie3.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie4.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie5.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie6.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie7.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie8.jpg" alt="" class="row_poster" />
         </div>
-    </div>
+      </div>
 
-    <!-- ROMANCE MOVIES -->
-    <div class="row">
+      <!-- ROMANCE MOVIES -->
+      <div class="row">
         <h2>ROMANCE MOVIES</h2>
         <div class="row_posters">
-            <img src="img/small-movie1.jpg" alt="" class="row_poster">
-            <img src="img/small-movie2.jpg" alt="" class="row_poster">
-            <img src="img/small-movie3.jpg" alt="" class="row_poster">
-            <img src="img/small-movie4.jpg" alt="" class="row_poster">
-            <img src="img/small-movie5.jpg" alt="" class="row_poster">
-            <img src="img/small-movie6.jpg" alt="" class="row_poster">
-            <img src="img/small-movie7.jpg" alt="" class="row_poster">
-            <img src="img/small-movie8.jpg" alt="" class="row_poster">
-            <img src="img/small-movie1.jpg" alt="" class="row_poster">
-            <img src="img/small-movie2.jpg" alt="" class="row_poster">
-            <img src="img/small-movie3.jpg" alt="" class="row_poster">
-            <img src="img/small-movie4.jpg" alt="" class="row_poster">
-            <img src="img/small-movie5.jpg" alt="" class="row_poster">
-            <img src="img/small-movie6.jpg" alt="" class="row_poster">
-            <img src="img/small-movie7.jpg" alt="" class="row_poster">
-            <img src="img/small-movie8.jpg" alt="" class="row_poster">
+          <img src="img/small-movie1.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie2.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie3.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie4.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie5.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie6.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie7.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie8.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie1.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie2.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie3.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie4.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie5.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie6.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie7.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie8.jpg" alt="" class="row_poster" />
         </div>
-    </div>
+      </div>
 
-    <!-- DOCUMENTORIES -->
-    <div class="row">
+      <!-- DOCUMENTORIES -->
+      <div class="row">
         <h2>DOCUMENTARIES</h2>
         <div class="row_posters">
-            <img src="img/small-movie1.jpg" alt="" class="row_poster">
-            <img src="img/small-movie2.jpg" alt="" class="row_poster">
-            <img src="img/small-movie3.jpg" alt="" class="row_poster">
-            <img src="img/small-movie4.jpg" alt="" class="row_poster">
-            <img src="img/small-movie5.jpg" alt="" class="row_poster">
-            <img src="img/small-movie6.jpg" alt="" class="row_poster">
-            <img src="img/small-movie7.jpg" alt="" class="row_poster">
-            <img src="img/small-movie8.jpg" alt="" class="row_poster">
-            <img src="img/small-movie1.jpg" alt="" class="row_poster">
-            <img src="img/small-movie2.jpg" alt="" class="row_poster">
-            <img src="img/small-movie3.jpg" alt="" class="row_poster">
-            <img src="img/small-movie4.jpg" alt="" class="row_poster">
-            <img src="img/small-movie5.jpg" alt="" class="row_poster">
-            <img src="img/small-movie6.jpg" alt="" class="row_poster">
-            <img src="img/small-movie7.jpg" alt="" class="row_poster">
-            <img src="img/small-movie8.jpg" alt="" class="row_poster">
+          <img src="img/small-movie1.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie2.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie3.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie4.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie5.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie6.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie7.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie8.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie1.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie2.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie3.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie4.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie5.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie6.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie7.jpg" alt="" class="row_poster" />
+          <img src="img/small-movie8.jpg" alt="" class="row_poster" />
         </div>
+      </div>
+
+      <footer id="footer">
+        <p>
+          More ways to watch.<a href="#">Reach us by mail </a>Or call 00000800
+          040 1966.
+        </p>
+        <br />
+        <p>
+          Copyright &copy; 2022 Netflix Inc; All rights reserved.
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> |
+          <a href="#">Viewing Policy</a> | <a href="#">Legal</a> |
+          <a href="#">Site Map</a>
+        </p>
+      </footer>
     </div>
-
-    <footer id="footer">
-        <p>More ways to watch.<a href="#">Reach us by mail </a>Or call 00000800 040 1966.</p><br>
-        <p>Copyright &copy; 2022 Netflix Inc; All rights reserved.   <a href="#">Privacy Policy</a> |   <a href="#">Terms of Use</a>  |   <a href="#">Viewing Policy</a> |   <a href="#">Legal</a> | <a href="#">Site Map</a> </p>
-    </footer>
-
-</body>
+  </body>
 </html>
